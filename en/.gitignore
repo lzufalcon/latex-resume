@@ -1,0 +1,7 @@
+.cls
+*.out
+*.dvi
+*.aux
+*.log
+*.pdf
+*.eps

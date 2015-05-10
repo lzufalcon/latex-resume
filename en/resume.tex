@@ -1,0 +1,178 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}	% uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it W. Zhangjin}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}				     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Wu Zhangjin}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+% F15, Wanjing building B, No.9, Middle ring south road,Wangjing Chaoyang District Beijing, China
+ \moveleft.5\hoffset\centerline{Addr: Meizu Technology Co., Ltd., Meizu Tech Building, ZhuHai, GuangDong, P.R.China}
+ \moveleft.5\hoffset\centerline{Tel: (86) 186xxxxxxxx, ZIP Code: 519085, Email\&MSN: wuzhangjin@gmail.com}
+ \moveleft.5\hoffset\centerline{Linkedin: wuzhangjin, Website: http://tinylab.org}
+
+\begin{resume}
+
+\section{\centerline{OBJECTIVE}}
+\vspace{8pt} % provide vertical space between section title and contents
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item R \& D on Android/Linux System Solutions
+ \end{itemize}
+
+\vspace{0.2in}
+\section{\centerline{EDUCATION}}
+\vspace{8pt}
+{\sl Master of Engineering}, Computer Software \& Theory \\
+DSLab, School of Information Science \& Engineering, Lanzhou University \hfill Sep 2007 - Jun 2010
+
+{\sl Bachelor of Engineering}, Computer Science \& Technology \\ % \sl will be bold italic in
+					 % New Century Schoolbook (or
+					 % any postscript font) and
+					 % just slanted in Computer
+					 % Modern (default) font
+School of Information Science \& Engineering, Lanzhou University \hfill Sep 2003 - Jul 2007
+
+\vspace{0.2in}
+\section{\centerline{PROFESSIONAL EXPERIENCE}}
+\vspace{8pt}
+
+{\sl Free, Libre / Open Source Communities. } \hfill	    2006 - Present \\
+FLOSS world    \hfill  FLOSS User, Propagator \& Contributor
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Establish (with schoolmates) the open source community of Lanzhou University: http://oss.lzu.edu.cn.
+   \item Launch and maintain several open source projects, mainly include Linux-loongson/community, RT-Preempt for MIPS/Loongson, Vnstatsvg, tp4cell.
+   \item Contribute more than 100 patches to mainline Linux, several patches to mainline RT-preempt, several patches to binutils, mainly about Ftrace, Power Management, Kernel compression, MIPS and Loongson.
+   \item Sponsored by CELF on the Tiny Linux Kernel Project: {\small http://elinux.org/Work\_on\_Tiny\_Linux\_Kernel}
+   \item Co-Write a book as first-author, ``Instant Optimizing Embedded Systems using BusyBox." {\small http://www.packtpub.com/optimizing-embedded-systems-using-busybox/book}
+ \end{itemize}
+
+{\sl Meizu Technology Co., Ltd. } \hfill	Oct 2013 - Present \\
+Linux BSP Team	  \hfill  BSP/Linux Team Manager
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Manage the BSP/Linux Team
+   \item Android/Linux User Experience Improvement (Stability, Performance, Power, Thermal, RealTime, Fastboot...)
+   \item Product Research of New hardwares \& features
+   \end{itemize}
+
+{\sl Meizu Technology Co., Ltd. } \hfill	Sep 2011 - Present \\
+Linux BSP Team	  \hfill  Linux Software Engineer
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Focus on Android/Linux kernel Features: Mainly on Linux RAS, have designed, implemented and deployed a complete set of Android Linux RAS solutions, Meizu MX series of android smartphones have benefited from those solutions. Besides, have also worked on Fastboot, RealTime, SizeOpt, Powersaving, Temperature control \& Tracing.
+   \item Team building with more standard software engineering flow and more open \& share community culture.
+   \item Leader of the Android/Linux optimization team
+   \item Co-Leader of the latest BSP products
+ \end{itemize}
+
+{\sl Wind River Systems(Beijing), Inc. } \hfill        Jun 2010 - Sep 2011 \\
+Linux Department    \hfill  Linux Software Engineer
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Wind River Linux BSP development, mostly on MIPS architecture. The main boards I have developed include AMCC Kilauea, Freescale P1020, Netlogic XL\{R,S,P\}.
+   \item Serial port, I2C, RTC, Sensor, MTD, PCIe, USB, IDE, SATA and Ethernet related drivers integration, porting and development.
+   \item Ftrace, RT-Preempt, Compressed kernel image, Lttng, SMP, Kexec \& Kdump, Ptrace, Oprofile related features development and defects fixing.
+ \end{itemize}
+
+{\sl Distributed \& Embedded System Lab, Lanzhou University} \hfill  Sep 2007 - Jun 2010 \\
+Computer Software \& Theory  \hfill M.E.
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Research on ``Linux Preempt-RT based Real Time System", Apr 2009 - Jun 2010
+   \item Research on ``Xtratum-based Fault Tolerant Real Time System", Aug 2008 - Jan 2009
+   \item Attend ``IBM Power Challenging Contest" and finish ``Scalable Firewall" Project, http://elf.oss.lzu.ed.ucn, from 2007 to 2008
+   \item Research on ``SIL4Linux: An attempt to explore Linux satisfying SIL4 in some restrictive conditions", http://sil4Linux.dslab.lzu.edu.cn, Sep 2006 - Aug 2008
+   \item Launch two open source prjoects: vnstatSVG, http://vnstatsvg.sourceforge.net, from Jan 2008 \\ and MyMirror, http://mymirror.sourceforge.net, from Aug 2007
+ \end{itemize}
+
+
+{\sl Jiangsu Lemote Tech Co., Ltd } \hfill	  Feb - Dec 2009 \\
+Software Department    \hfill	(Internship)
+
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Develop/Maintain MIPS/Loongson specific Linux support(BSP, Ftrace, Compressed kernel support) and upstream them to mainline, Apr - Dec 2009
+   \item Research on Linux based power management of MIPS/Loongson Products, May - Aug 2009
+   \item Port Real Time Preempt Patch of Linux to MIPS/Loongson Platform, Feb - Apr 2009
+ \end{itemize}
+
+{\sl Lanzhou Univeristy} \hfill        Sep 2003 - Jul 2007 \\
+Computer Science \& Technology	\hfill		B.E.
+   \begin{itemize} \itemsep -2pt % reduce space between items
+   \item Attend ``IBM Cell Contest" and finish ``GDB Tracepoint for Cell" Project, http://tp4cell.sourceforge.net, Sep - Dec 2006
+   \item Attend KIOSK project, http://dslab.lzu.edu.cn:8080/members/zhangj/projects/kiosk.html
+   \item Launch ``ftp search engine" project, finish one version with VB+ASP+ACCESS under Windows XP and another version with C+PHP+Mysql under Linux, from 2004 to 2007
+ \end{itemize}
+
+
+\section{\centerline{ ENGLISH SKILLS }}
+\vspace{8pt}
+Have a good command of both spoken and written English, Past CET-6. Have attended the Linux development community from 2009, can communicate with the other developers from all over the world. My tutor(Nicholas MC. Guire) in university comes from Autstria, have worked with him from 2006.
+
+\vspace{0.2in}
+\section{\centerline{ COMPUTING SKILLS }}
+\vspace{8pt}
+OS: about 8 years of Linux Programming, have used Ubuntu, Debian, ArchLinux, Slackware, Redhat \\
+Language: C, Assembly, Shell, Python, C++, Java; SVM: Git, SVN, CVS \\
+Tools: GNU ToolChain, Cscope, Ctags, Vim, Make, Qemu, Busybox, Buildroot, Openembedded \\
+Embedded: X86, VIA, MIPS, Loongson, PowerPC; WRLinux, Preempt-RT, RTLinux, Xtratum \\
+Debug/Performance: GDB, Kgdb, Ftrace, KFT, Kgcov, Strace, Perf, Oprofile, Lttng \\
+Database: MySQL, PostgreSQL, SQLite, SQLSever, Web: PHP, AJAX, XOOPS, Wordpress
+\vspace{0.2in}
+\section{\centerline{PUBLICATIONS}}
+\vspace{15pt}
+\begin{itemize}
+   \item ``Tiny Linux Kernel Project: Section Garbage Collection Patchset" The 13th Real-Time Linux workshop, 2011
+   \item ``Research and Practice on Preempt-RT Patch of Linux" The graduation thesis of M.E., 2010.
+   \item ``Porting RT-preempt to Loongson2F" In RTLWS11 2009: The 11th Real-Time Linux Workshop, pages 169 - 174, 2009.
+   \item ``A CGI+AJAX+SVG based monitoring method for distributed and embedded system" In U-Media 2008: The 1st IEEE International Conference on Ubi-Media Computing and Workshops, pages 144 - 148, 2008.
+   \end{itemize}
+
+
+\vspace{0.2in}
+\section{\centerline{MEMBERSHIPS}}
+\vspace{-5pt} % reduce space between section title and contents
+\begin{center}
+      Owner, Tiny Lab, R\&D on Linux Kernel Features, http://tinylab.org \\
+      Owner, Preempt-RT for loongson project, http://dev.lemote.com/code/rt4ls \\
+      Founder, Linux-loongson/Community prjoect, http://dev.lemote.com/code/linux-loongson-community \\
+      Co-Maintainer, Loongson Development Group, loongson-dev@google.com \\
+      Co-founder, Open Source Community of Lanzhou University, http://oss.lzu.edu.cn \\
+      Co-founder, IBM Student Club of Lanzhou University, http://ibmclub.oss.lzu.edu.cn \\
+      Subeditor of editorial department(2005), School of Information Science \& Engineering, Lanzhou University \\
+ \end{center}
+ \vspace{0.2in}
+\section{\centerline{SCHOLARSHIPS AND AWARDS}}
+\vspace{-5pt}
+\begin{center}
+	Nominated to attend Linux Summit 2010, National Scholarship (2004), ``Computer World" Scholarship (2006), Lanzhou Univeristy Scholarship (2003,2004,2005), Lanzhou University ``Third Programming Contest" Second Prize (2004)
+\end{center}
+
+\vspace{0.2in}
+\section{\centerline{INTERESTS}}
+\vspace{-5pt}
+\begin{center}
+Ping Pang, Tennis, Roller skating, Skiiing, Swimming, Hill-climbing, FLOSS, Reading
+
+\end{center}
+
+\end{resume}
+\end{document}
